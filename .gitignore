@@ -1,0 +1,17 @@
+node_modules/
+platforms/
+plugins/
+*.swp
+.DS_Store
+Thumbs.db
+**debug.log
+typings/
+aot/
+dist/
+aot-dist/
+src/**/*.js.map
+src/**/*.js
+
+*-debug**
+/compiled/
+dll/

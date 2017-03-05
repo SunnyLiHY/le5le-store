@@ -1,0 +1,31 @@
+<div class="text-center" style="background-image: url(http://www.i-dengta.com/assets/img/dengta.jpg);height: 5rem">
+  <div class="abs full text-center" style="height: 5rem;background: rgba(0, 0, 0, 0.4);color:#fff">
+    <div class="abs full text-center" style="top: 1.5rem;font-size: .28rem">
+      <h1>le5le-store</h1>
+      <div class="mt50">
+        A data store for angular。
+      </div>
+    </div>
+  </div>
+</div>
+<div class="panel mt30">
+  有文章说没有使用redux的angular项目是遍地开花的混乱状态。
+  <div class="text-center p20">
+    <img src="http://static.zybuluo.com/wpcfan/fbj094yu5nr6jc4u0xgb624e/image_1b4j22i17mga14db1e5d1k38tfb13.png">
+  </div>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 我并不认为一定要使用redux。redux很方便的是前端开发者的调试。但是，全局的集中存储，让我担心性能；同时，集中的声明和统一定义方式，
+  破坏了angular的优化的模块独立性，对redux过于依赖。<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 过去的一两年里，做个大大小小很多个angular项目，我并不认为我需要redux。
+  相反，我更喜欢angular良好的模块化和即用即申请的局部变量方法。用完释放，相互独立隔离。
+  我仔细思考了为什么大家会说状态混乱，是因为缺乏像后台数据库一样的前端数据中心，加上各开发小伙伴思考方式不一致而造成了大家说的混乱。
+  因此，在有了一个前端数据中心服务的前提下，通过一个数据中心向各业务模块提供数据支持，就完全可以避免混乱。
+
+  <div class="text-center">
+    <img src="assets/img/store.png">
+  </div>
+
+  <div>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; le5le-store提供了一个前端数据存储服务中心，支持即时读写、Observable读写。Observable读采用rxjs封装，方便订阅数据；Observable写可以解决
+    网络请求等异步写。我们提倡数据的模块化和局部性；仅当需要模块间通信时，使用数据中心服务。
+  </div>
+</div>
