@@ -82,7 +82,6 @@ export class StoreService {
 
     let data: any = this.memStore[rootKey];
     if (!data) {
-      if (!value) return false;
       this.memStore[rootKey] = {};
       data = this.memStore[rootKey];
     }
@@ -94,11 +93,10 @@ export class StoreService {
     if (keys.length > 1) {
       keys.splice(0,1);
       for (let k of keys) {
+        if (!subData[k]) subData[k] = {};
+
+        // 添加到observable通知数组，通知订阅数据改变
         observableKeys.push(observableKeys[observableKeys.length-1] + '.' + k);
-        if (!subData[k]) {
-          if (value) subData[k] = {};
-          else return false;
-        }
 
         parentData = subData;
         readKey = k;
