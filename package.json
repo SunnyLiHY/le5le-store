@@ -1,6 +1,6 @@
 {
   "name": "le5le-store",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Angular local store for le5le.",
   "main": "index.ts",
   "scripts": {
