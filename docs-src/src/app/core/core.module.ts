@@ -3,24 +3,21 @@ import { CommonModule } from '@angular/common';
 
 import { StoreService } from './store/store.service';
 
-export { CookieService } from './cookie/cookie.service';
-export { StoreService } from './store/store.service';
-
 @NgModule({
   imports: [CommonModule],
   providers: [StoreService]
 })
-export class Le5leStoreModule {
-  constructor( @Optional() @SkipSelf() parentModule: Le5leStoreModule) {
+export class CoreModule {
+  constructor( @Optional() @SkipSelf() parentModule: CoreModule) {
     if (parentModule) {
       throw new Error(
-        'Le5leStoreModule is already loaded. Import it in the AppModule only');
+        'CoreModule is already loaded. Import it in the AppModule only');
     }
   }
 
   static forRoot(): ModuleWithProviders {
     return {
-      ngModule: Le5leStoreModule,
+      ngModule: CoreModule,
       providers: []
     };
   }

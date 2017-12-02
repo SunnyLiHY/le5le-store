@@ -1,89 +1,55 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <base href="/le5le-store/">
-  <title>le5le-store - A data store for angular！</title>
-  <meta charset="UTF-8">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="msapplication-tap-highlight" content="no">
-  <meta name="viewport"
-        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-  <link href="assets/img/logo.ico" rel="shortcut icon" type="image/x-icon">
-  <link href="//at.alicdn.com/t/font_0vio60g7zpmygb9.css" rel="stylesheet">
-<link href="main.20d6c8a41f03b414f090564f6181400c.css" rel="stylesheet"></head>
-<body>
-
-<!--[if lt IE 10]>
-<script type="text/javascript">
-  location.href = '/browser.html';
-</script>
-<![endif]-->
-<app>
-  <style>
-    @-webkit-keyframes line-scale-party {
-      0% {
-        transform: scale(1);
+<!doctype html><html><head><base href="/"><title>le5le-store - A data store for angular！</title><meta charset="UTF-8"><meta name="format-detection" content="telephone=no"><meta name="msapplication-tap-highlight" content="no"><meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width"><link href="assets/img/logo.ico" rel="shortcut icon" type="image/x-icon"><link href="//at.alicdn.com/t/font_mxip2bwv22wqaor.css" rel="stylesheet"><link href="/assets/styles.e36d73772c65d0bce49af701990b014d.css" rel="stylesheet"/></head><body><app-root><style>@-webkit-keyframes line-scale-party {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(0.5);
+        }
+        100% {
+          transform: scale(1);
+        }
       }
-      50% {
-        transform: scale(0.5);
+
+      @keyframes line-scale-party {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(0.5);
+        }
+        100% {
+          transform: scale(1);
+        }
       }
-      100% {
-        transform: scale(1);
+
+      .line-scale-party>div:nth-child(1) {
+        animation-delay: 0.8s;
+        animation-duration: 0.35s;
       }
-    }
 
-    @keyframes line-scale-party {
-      0% {
-        transform: scale(1);
+      .line-scale-party>div:nth-child(2) {
+        animation-delay: 0.68s;
+        animation-duration: 1.25s;
       }
-      50% {
-        transform: scale(0.5);
+
+      .line-scale-party>div:nth-child(3) {
+        animation-delay: 0.44s;
+        animation-duration: 0.39s;
       }
-      100% {
-        transform: scale(1);
+
+      .line-scale-party>div:nth-child(4) {
+        animation-delay: 0.17s;
+        animation-duration: 0.8s;
       }
-    }
 
-    .line-scale-party > div:nth-child(1) {
-      animation-delay: 0.8s;
-      animation-duration: 0.35s;
-    }
-
-    .line-scale-party > div:nth-child(2) {
-      animation-delay: 0.68s;
-      animation-duration: 1.25s;
-    }
-
-    .line-scale-party > div:nth-child(3) {
-      animation-delay: 0.44s;
-      animation-duration: 0.39s;
-    }
-
-    .line-scale-party > div:nth-child(4) {
-      animation-delay: 0.17s;
-      animation-duration: 0.8s;
-    }
-
-    .line-scale-party > div {
-      background-color: #0288d1;
-      width: 3px;
-      height: 25px;
-      border-radius: 2px;
-      margin: 0;
-      animation-fill-mode: both;
-      display: inline-block;
-      animation-name: line-scale-party;
-      animation-iteration-count: infinite;
-    }
-  </style>
-  <div style="position: fixed; top: 50%;left: 50%;">
-    <div class="line-scale-party">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-  </div>
-</app>
-<script type="text/javascript" src="polyfills.7ccafad928c8d49f1f1c.js" defer></script><script type="text/javascript" src="vendor.bb41575eb08b0427f74c.js" defer></script><script type="text/javascript" src="main.9847345bb7dd542039f2.js" defer></script></body>
-</html>
+      .line-scale-party>div {
+        background-color: #0288d1;
+        width: 3px;
+        height: 25px;
+        border-radius: 2px;
+        margin: 0;
+        animation-fill-mode: both;
+        display: inline-block;
+        animation-name: line-scale-party;
+        animation-iteration-count: infinite;
+      }</style><div style="position: fixed; top: 50%;left: 50%;"><div class="line-scale-party"><div></div><div></div><div></div><div></div></div></div></app-root><script type="text/javascript" src="/assets/inline.1bbe627bb218875a2246.js"></script><script type="text/javascript" src="/assets/polyfills.22292392efb22accf981.js"></script><script type="text/javascript" src="/assets/styles.60be6fd12b168b2e9d9e.js"></script><script type="text/javascript" src="/assets/vendor.d006bec634c53858d274.js"></script><script type="text/javascript" src="/assets/main.f191fdc2af9e2d936769.js"></script></body></html>
