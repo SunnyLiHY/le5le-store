@@ -5,7 +5,7 @@
   "scripts": {
     "clean": "npm run rimraf -- dist ",
     "rimraf": "rimraf",
-    "build": "npm run rimraf -- ../docs && webpack --config webpack.prod.js --colors --progress",
+    "build": "npm run rimraf -- ../../docs && webpack --config webpack.prod.js --colors --progress",
     "dev": "npm run clean && webpack --config webpack.dev.js --colors --progress",
     "start": "webpack-dev-server --config webpack.config.js --open --progress --profile --watch --content-base src/",
     "test": "karma start ./karma.conf.js",

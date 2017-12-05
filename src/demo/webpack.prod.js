@@ -107,7 +107,7 @@ module.exports = {
   },
   "output": {
     "publicPath": "/assets/",
-    "path": path.join(process.cwd(), "../docs/assets"),
+    "path": path.join(process.cwd(), "../../docs/assets"),
     "filename": "[name].[chunkhash].js",
     "chunkFilename": "[id].[chunkhash].js",
     "crossOriginLoading": false
