@@ -1,6 +1,6 @@
 {
   "name": "le5le-store",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A global store and subcribe data for JavaScript apps.",
   "main": "index.js",
   "scripts": {
