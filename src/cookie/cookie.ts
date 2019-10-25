@@ -1,9 +1,4 @@
-import { Injectable } from '@angular/core';
-
-@Injectable({
-  providedIn: 'root'
-})
-export class CookieService {
+export class Cookie {
   static get(name: string): string {
     let arr: RegExpMatchArray;
     const reg = new RegExp('(^| )' + name + '=([^;]*)(;|$)');
@@ -27,9 +22,7 @@ export class CookieService {
       options = {};
     }
     if (options.expires) {
-      const dtExpires = new Date(
-        new Date().getTime() + options.expires * 1000 * 60 * 60 * 24
-      );
+      const dtExpires = new Date(new Date().getTime() + options.expires * 1000 * 60 * 60 * 24);
       cookieStr += 'expires=' + dtExpires.toUTCString() + ';';
     }
     if (options.path) {
@@ -47,12 +40,12 @@ export class CookieService {
   //   domain?:string
   // }
   static delete(name: string, options?: any) {
-    if (CookieService.get(name)) {
+    if (Cookie.get(name)) {
       if (!options) {
         options = {};
       }
       options.expires = -1;
-      CookieService.set(name, '', options);
+      Cookie.set(name, '', options);
     }
   }
 }
