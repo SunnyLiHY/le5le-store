@@ -10,7 +10,7 @@ export class Observer {
     this.fn = fn;
   }
 
-  unsubcribe() {
+  unsubscribe() {
     delete observers[this.id];
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "le5le-store",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A global store and subcribe data for JavaScript apps.",
   "main": "index.js",
   "scripts": {
@@ -24,6 +24,7 @@
   "homepage": "https://github.com/Alsmile/topology#readme",
   "devDependencies": {
     "typescript": "~3.4.3",
-    "copyfiles": "latest"
+    "copyfiles": "latest",
+    "karma": "~4.1.0"
   }
 }

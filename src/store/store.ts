@@ -49,7 +49,7 @@ export class Store {
     }
   }
 
-  static subcribe(key: string, fn: (data: any) => void) {
+  static subscribe(key: string, fn: (data: any) => void) {
     const id = s8();
     const observer = new Observer(id, key, fn);
     observers[id] = observer;

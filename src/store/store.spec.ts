@@ -87,15 +87,15 @@ describe('Store', () => {
   });
 
   it('observers', function() {
-    const subObj = Store.subcribe('obsObj', value => {
+    const subObj = Store.subscribe('obsObj', value => {
       console.log('obsObj changed:', value);
       expect(value).not.toBe(null);
     });
-    const subA = Store.subcribe('obsObj.a', value => {
+    const subA = Store.subscribe('obsObj.a', value => {
       console.log('obsObj.a changed:', value);
       expect(value).not.toBe(null);
     });
-    const subB = Store.subcribe('obsObj.a.b', value => {
+    const subB = Store.subscribe('obsObj.a.b', value => {
       console.log('obsObj.a.b changed:', value);
       expect(value).not.toBe(null);
     });
@@ -105,8 +105,8 @@ describe('Store', () => {
     data.obsObj.a.b = 789;
     Store.updated('obsObj.a.b');
 
-    subObj.unsubcribe();
-    subA.unsubcribe();
-    subB.unsubcribe();
+    subObj.unsubscribe();
+    subA.unsubscribe();
+    subB.unsubscribe();
   });
 });
